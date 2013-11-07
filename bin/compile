@@ -38,15 +38,15 @@ if [ -f www/Procfile ]; then
   mv www/Procfile .
 fi
 
-MCRYPT_URL="http://pole.uasabi.com/mcrypt-2.5.8-2.tar.gz"
+MCRYPT_URL="https://whiteink.s3.amazonaws.com/heroku-buildpack-php/mcrypt-2.5.8-2.tar.gz"
 echo "-----> Bundling mcrypt version 2.5.8-2"
 curl --silent --max-time 60 --location "$MCRYPT_URL" | tar xz
 
-APACHE_URL="http://pole.uasabi.com/apache-2.2.25-2.tar.gz"
+APACHE_URL="https://whiteink.s3.amazonaws.com/heroku-buildpack-php/apache-2.2.25-2.tar.gz"
 echo "-----> Bundling Apache version 2.2.25-2"
 curl --silent --max-time 60 --location "$APACHE_URL" | tar xz
 
-PHP_URL="http://pole.uasabi.com/php-5.3.27-2.tar.gz"
+PHP_URL="https://whiteink.s3.amazonaws.com/heroku-buildpack-php/php-5.3.27-2.tar.gz"
 echo "-----> Bundling PHP version 5.3.27-2"
 curl --silent --max-time 60 --location "$PHP_URL" | tar xz
 
